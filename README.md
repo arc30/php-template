@@ -11,8 +11,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 Create an account on CircleCI using your GitHub profile.<br>
 Create an account on Heroku.<br>
-Install Docker and Docker Compose.
-``` sudo apt-get install docker.io``` <br>
+Install Docker and Docker Compose.<br>
+``` sudo apt-get install docker.io``` <br><br>
 ```sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose```
 
 ### Installing
