@@ -1,36 +1,40 @@
-# php-template
 
-Fork this repository.
+# CI/CD pipeline for php project
 
-Open your terminal and clone your forked repo.
-# git clone <cloning link>
+A basic pipeline that integrates docker, circleci and heroku in a php project for continuous integration and continuous deployment.
 
-Navigate to the php-template folder in your local system.
-There are 2 folders: src and .circleci
-There is a Dockerfile.
+## Getting Started
 
-Src folder is where you'll write all your source php files.
-.circleci contains the config file
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-------------------------------------------------------------------------
+### Prerequisites
 
-Scrum master has an account on circleci and Heroku.
-Go to heroku and add a new project with your desired project name, say my-app.
+An account on circleci linked to your GitHub.<br>
+An account on heroku.<br>
+Docker.
 
-Go to heroku account settings. Scroll down to find API key. Click reveal key. Copy and save this somewhere for later use.
 
-Go to circleci.
-Go to Add new project
-Click on your forked repo name and set up the project. Click on "start building option".
+### Installing
 
-Now you might see that the build has failed.
+Fork and clone this repository. <br>
 
-So go to builds.
-Click on the settings button next to your project name.
-In the build settings, go to environment variables.
-Click on Add variable.
-Set these up.
+php-template directory contains:<br>
+1) ```src``` folder which will have all php source codes. <br>
+2) ```.circleci``` folder which has the config file. <br>
+3) ```Dockerfile``` that dockerizes your project. <br>
 
+### Heroku
+
+1) Create a new project ```my-app```<br>
+2) Go to account settings and copy the API Key <br>
+
+### CircleCi
+
+1) Add and set up this forked project and click on ```start building``` .<br>
+2) Go to this project's settings. <br>
+3) Go to environment variables to add new env variables. <br>
+
+  ```
   NAME:   HEROKU_API_KEY  
   VALUE:   the key that you copied from heroku
                    
@@ -39,15 +43,16 @@ Set these up.
   
   NAME: HEROKU_USERNAME               
   VALUE:  email id used to login for heroku
-  
-After you save this, try building your project again from circleci. Be relieved if it's fixed.
+```
+4) Rebuild the project
 
-Go to heroku.
-Click on your project name and click "open app". You should be able to see your sample php page.
 
-Now start building your project with this basic pipeline outline
- 
+## Running the tests
 
+Explain how to run the automated tests for this system
 
 
 
+## Deployment
+
+Open your app on Heroku to find your php project deployed.
