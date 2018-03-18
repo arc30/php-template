@@ -10,10 +10,11 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Create an account on CircleCI using your GitHub profile.<br>
-Create an account on Heroku.<br>
-Install Docker and Docker Compose.<br>
-``` sudo apt-get install docker.io``` <br><br>
-```sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose```
+https://circleci.com/signup/ <br><br>
+An account on Heroku.<br>
+https://signup.heroku.com/login <br><br>
+Docker and Docker Compose.<br>
+``` sudo apt-get install docker.io docker-compose ``` <br><br>
 
 ### Installing
 
@@ -21,7 +22,7 @@ Fork and clone this repository. <br>
 
 php-template directory contains:<br>
 1) ```src``` is the folder where you will write your PHP source code files. <br>
-2) ```.circleci``` is the folder which has the default configuration file for integrating your project with CircleCI. This file is enough to get your project up and running. You have to edit this file according to your project specific needs. <br>
+2) ```.circleci``` is the folder which has the default configuration file for integrating your project with CircleCI. This file is enough to get your project up and running. You may have to later edit this file according to your project specific needs. <br>
 3) ```Dockerfile``` is the file used by Docker to dockerize your project. <br>
 
 ### Heroku
@@ -29,9 +30,9 @@ php-template directory contains:<br>
 1) Create a new project ```my-app```<br>
 2) Go to account settings and copy your API Key <br>
 
-### CircleCi
+### CircleCI
 
-1) Add and set up this forked project and click on ```start building``` .<br>
+1) Add and set up this forked project and click on ```Start Building```. Here the build will fail, but continue to step 2. <br>
 2) Go to this project's settings and navigate to environment variables section to add the following three environment variables. <br>
 
   ```
@@ -44,7 +45,7 @@ php-template directory contains:<br>
   NAME:  HEROKU_USERNAME               
   VALUE: email id used to login for heroku
 ```
-4) Rebuild the project
+4) Rebuild the project. The build should now be fixed.
 
 
 ## Running the tests
