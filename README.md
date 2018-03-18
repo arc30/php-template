@@ -27,7 +27,7 @@ php-template directory contains:<br>
 
 ### Heroku
 
-1) Create a new project ```my-app```<br>
+1) Create a new project <br>
 2) Go to account settings and copy your API Key <br>
 
 ### CircleCI
