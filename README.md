@@ -32,13 +32,13 @@ Click on Add variable.
 Set these up.
 
   NAME:   HEROKU_API_KEY  
-  VALUE:   <the key that you copied from heroku>
+  VALUE:   the key that you copied from heroku
                    
   NAME: HEROKU_APP_NAME                
-  VALUE: <your project name on heroku>
+  VALUE: your project name on heroku
   
   NAME: HEROKU_USERNAME               
-  VALUE:  <email id used to login for heroku>
+  VALUE:  email id used to login for heroku
   
 After you save this, try building your project again from circleci. Be relieved if it's fixed.
 
