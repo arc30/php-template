@@ -11,8 +11,8 @@ $db = substr($url["path"], 1);
 $conn = new mysqli($servername, $username, $password, $db);
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
     echo "Error creating database: " . $conn->connect_error;
+    die("Connection failed: " . $conn->connect_error);
 } else {
     echo "Database created successfully";
 }
