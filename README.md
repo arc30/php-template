@@ -58,4 +58,4 @@ This shall be explained in a later stage.
 
 ## Deployment
 
-Open your app on Heroku to find your PHP project deployed. Visit https://<your-app-name>.herokuapp.com/ to see your website. 
+Open your app's Heroku Dashboard to find your PHP project deployed. Visit ```https://<your-app-name>.herokuapp.com/``` to see your website. 
