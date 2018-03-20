@@ -1,4 +1,13 @@
 FROM php:7.0-apache
 COPY src/ /var/www/html/
+
+ADD database/db.sql /root/
+ADD final-php.sh /usr/sbin/final-php
+
+RUN docker-php-ext-install mysqli
+RUN apt-get update; apt-get -y  install mysql-client
+
 ENV PORT ${PORT:-8080}
-CMD a2dismod mpm_event; sed -i "s/80/$PORT/" /etc/apache2/ports.conf; sed -i "s/80/$PORT/" /etc/apache2/sites-enabled/000-default.conf; apache2-foreground;
+ENV CLEARDB_DATABASE_URL ${CLEARDB_DATABASE_URL:-"mysql://testuser:testpass@localhost/testdb?reconnect=true"}
+
+CMD final-php
