@@ -9,12 +9,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Create an account on CircleCI using your GitHub profile.<br>
-https://circleci.com/signup/ <br><br>
-An account on Heroku.<br>
-https://signup.heroku.com/login <br><br>
-Docker and Docker Compose.<br>
-``` sudo apt-get install docker.io docker-compose ``` <br><br>
+1) An account on <a href="https://circleci.com/signup/">CircleCI</a> created using your GitHub profile.<br>
+
+2) An account on <a href="https://signup.heroku.com/login">Heroku</a>.<br>
+
+3) Docker and Docker Compose installed on your system.<br>
+``` sudo apt-get install docker.io docker-compose ``` 
 
 ### Installing
 
@@ -22,8 +22,9 @@ Fork and clone this repository. <br>
 
 php-template directory contains:<br>
 1) ```src``` is the folder where you will write your PHP source code files. <br>
-2) ```.circleci``` is the folder which has the default configuration file for integrating your project with CircleCI. This file is enough to get your project up and running. You may have to later edit this file according to your project specific needs. <br>
-3) ```Dockerfile``` is the file used by Docker to dockerize your project. <br>
+2) ```database``` is the folder where you save your mysql database dump. Create a database dump of your project using <a href="https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html">mysqldump</a> and save it here as ```db.sql```.<br>
+3) ```.circleci``` is the folder which has the default configuration file for integrating your project with CircleCI. This file is enough to get your project up and running. You may have to later edit this file according to your project specific needs. <br>
+4) ```Dockerfile``` is the file used by Docker to dockerize your project. <br>
 
 ### Heroku
 
@@ -51,7 +52,6 @@ php-template directory contains:<br>
 ## Running the tests
 
 This shall be explained in a later stage.
-
 
 
 ## Deployment
