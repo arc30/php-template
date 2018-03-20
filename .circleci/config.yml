@@ -10,4 +10,4 @@ jobs:
             docker login --username=$HEROKU_USERNAME --password=$HEROKU_API_KEY registry.heroku.com
             docker tag php-site registry.heroku.com/$HEROKU_APP_NAME/web
             docker push registry.heroku.com/$HEROKU_APP_NAME/web
-       -run: phpunit --version
+       - run: phpunit --version
