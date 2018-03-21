@@ -32,7 +32,7 @@ Fork and clone this repository. <br>
 
 1) Create a new project <br>
 2) Go to account settings and copy your API Key <br>
-
+3) Add ```ClearDB MySQL``` by clicking ```Configure Add-ons``` on your project's overview page.
 ### CircleCI
 
 1) Add and set up this forked project and click on ```Start Building```. Here the build will fail, but continue to step 2. <br>
