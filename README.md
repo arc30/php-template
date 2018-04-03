@@ -23,6 +23,7 @@ Fork and clone this repository. <br>
 ```php-template``` directory contains:<br>
 1) ```src``` is the folder where you will write your PHP source code files. <br>
 2) ```database``` is the folder where you save your mysql database dump. Create a database dump of your project using <a href="https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html">mysqldump</a> and save it here as ```db.sql```.<br>
+3) ```tests``` is the folder where your test files using PHPUnit are stored. Tests are explained in a later stage. <br>
 <!--
 3) ```.circleci``` is the folder which has the default configuration file for integrating your project with CircleCI. This file is enough to get your project up and running. You may have to later edit this file according to your project specific needs. <br>
 4) ```Dockerfile``` is the file used by Docker to dockerize your project. This file is enough to get your project up and running. You may have to later edit this file according to your project specific needs.<br>
@@ -53,9 +54,20 @@ Fork and clone this repository. <br>
 
 ## Running the tests
 
-This shall be explained in a later stage.
+We use <a href="https://phpunit.de/">PHPUnit 7.0</a> for unit testing.
+This project contains ```Email.php``` in ```src``` directory and corresponding ```EmailTest.php``` in ```tests``` directory.
+<br>
+
+Place your unit tests (in line with PHPUnit) corresponding to source code files in ```tests``` directory.
+
 
 
 ## Deployment
 
 Open your app's Heroku Dashboard to find your PHP project deployed. Visit ```https://<your-app-name>.herokuapp.com/``` to see your website. 
+
+## Acknowledgements
+
+* **Dalton Fury* - *Initial work* - [Dalton Fury](https://github.com/daltonfury42)
+
+
