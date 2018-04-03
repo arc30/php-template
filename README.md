@@ -54,8 +54,8 @@ Fork and clone this repository. <br>
 
 ## Running the tests
 
-We use <a href="https://phpunit.de/">PHPUnit 7.0</a> for unit testing.
-This project contains ```Email.php``` in ```src``` directory and corresponding ```EmailTest.php``` in ```tests``` directory.
+We use <a href="https://phpunit.de/">PHPUnit 7.0</a> for unit testing.<br>
+This project contains sample```Email.php``` in ```src``` directory and corresponding ```EmailTest.php``` in ```tests``` directory.
 <br>
 
 Place your unit tests (in line with PHPUnit) corresponding to source code files in ```tests``` directory.
@@ -68,6 +68,6 @@ Open your app's Heroku Dashboard to find your PHP project deployed. Visit ```htt
 
 ## Acknowledgements
 
-* **Dalton Fury* - *Initial work* - [Dalton Fury](https://github.com/daltonfury42)
+* **Dalton Fury** - *Initial work* - [Dalton Fury](https://github.com/daltonfury42)
 
 
