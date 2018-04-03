@@ -1,5 +1,12 @@
 version: 2
 jobs:
+  test:
+    machine: true
+    steps:
+	- checkout
+	- run: |
+		docker run --rm -it -v $(pwd):/workspace denisura/phpab -o src/autoload.inc.php src		
+		 docker run -v $(pwd):/app --rm phpunit/phpunit --bootstrap src/autoload.php tests
   build:
     machine: true
     steps:
@@ -12,4 +19,4 @@ jobs:
             docker push registry.heroku.com/$HEROKU_APP_NAME/web
             
             
-      - run: phpunit --version
+     
