@@ -1,17 +1,12 @@
 version: 2
 jobs:
-  test:
-    machine: true
-    steps:
-	- checkout
-	- run: |
-		docker run --rm -it -v $(pwd):/workspace denisura/phpab -o src/autoload.inc.php src		
-		 docker run -v $(pwd):/app --rm phpunit/phpunit --bootstrap src/autoload.php tests
   build:
     machine: true
     steps:
       - checkout
       - run: |
+		docker run --rm -it -v $(pwd):/workspace denisura/phpab -o src/autoload.inc.php src		
+		 docker run -v $(pwd):/app --rm phpunit/phpunit --bootstrap src/autoload.php tests
             docker info
             docker build -t php-site .
             docker login --username=$HEROKU_USERNAME --password=$HEROKU_API_KEY registry.heroku.com
