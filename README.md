@@ -68,6 +68,6 @@ Open your app's Heroku Dashboard to find your PHP project deployed. Visit ```htt
 
 ## Acknowledgements
 
-* **Dalton Fury** - *Initial work* - [Dalton Fury](https://github.com/daltonfury42)
+* **Dalton Fury** -  - [Dalton Fury](https://github.com/daltonfury42)
 
 
