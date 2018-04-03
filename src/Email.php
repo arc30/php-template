@@ -9,7 +9,7 @@ final class Email
     {
         $this->ensureIsValidEmail($email);
 
-        $this->email = $email;
+        $this->email = $emaila;
     }
 
     public static function fromString(string $email): self
